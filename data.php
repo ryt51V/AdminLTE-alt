@@ -141,7 +141,7 @@
     function readInBlockList() {
         global $domains;
         return count($domains) > 1 ? $domains :
-            file("/etc/pihole/gravity.list");
+            file("/var/lib/pihole/gravity.list");
     }
     function readInLog() {
         global $log;
